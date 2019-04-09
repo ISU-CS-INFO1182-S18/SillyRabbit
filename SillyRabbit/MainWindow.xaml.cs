@@ -22,12 +22,15 @@ namespace SillyRabbit {
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window {
+        SuperHero _MyDude;
         public MainWindow() {
             InitializeComponent();
+            //btnNewButton.Style = (Style)App.Current.Resources["styButton"];
         }
 
         private void BtnSerialize_Click(object sender, RoutedEventArgs e) {
-            SuperHero sup = new SuperHero("Super", "Man");
+            //SuperHero sup = new SuperHero("Super", "Man");
+             _MyDude = new SuperHero("Super", "Man");
 
             FileStream fs = null;
             try {
@@ -37,17 +40,43 @@ namespace SillyRabbit {
                     // got a file name correctly.
                     BinaryFormatter bf = new BinaryFormatter();
                     fs = new FileStream(sfd.FileName, FileMode.Create);
-                    bf.Serialize(fs, sup);
+                    bf.Serialize(fs, _MyDude);
                 } else {
                     // error getting file.
                 }
-            } catch (Exception ex ) {
+            } catch (Exception ex) {
                 MessageBox.Show(ex.Message);
             } finally {
                 if (fs != null) fs.Close();
             }
 
 
+        }
+
+        private void BtnDeSerialize_Click(object sender, RoutedEventArgs e) {
+            System.IO.FileStream fs = null;
+            try {
+                OpenFileDialog ofd = new OpenFileDialog();
+                ofd.Filter = "TRIX Files|*.trix|All Files(*.*)|*.*";
+
+                if (ofd.ShowDialog() == true) {
+                    // got our file.
+                    //File.ReadAllLines(ofd.FileName);
+                    fs = File.Open(ofd.FileName, FileMode.Open);
+                    BinaryFormatter bf = new BinaryFormatter();
+                    //SuperHero o = (SuperHero)bf.Deserialize(fs);
+                    _MyDude = (SuperHero)bf.Deserialize(fs); 
+                    tbOutput.Text = _MyDude.FullName;
+
+                } else {
+                    //nope.
+
+                }
+            } catch (Exception ex) {
+                MessageBox.Show(ex.Message);
+            } finally {
+                if (fs != null) fs.Close();
+            }
         }
     }
 }

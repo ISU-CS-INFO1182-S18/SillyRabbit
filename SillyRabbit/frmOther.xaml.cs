@@ -25,7 +25,7 @@ namespace SillyRabbit {
             MainWindow mw = new MainWindow();
             mw.Show();
             this.Close();
-            Application.Current.Shutdown();
+            //Application.Current.Shutdown();
         }
     }
 }
