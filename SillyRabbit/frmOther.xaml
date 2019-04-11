@@ -5,10 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SillyRabbit"
         mc:Ignorable="d"
-        Title="frmOther" Height="228.321" Width="346.679">
+        Title="frmOther" Height="280.433" Width="336.08">
     <Grid>
         <Label Content="Other Window" HorizontalAlignment="Left" Margin="127,77,0,0" VerticalAlignment="Top"/>
         <Button x:Name="btnShowMain" Content="Button" HorizontalAlignment="Left" Margin="127,108,0,0" VerticalAlignment="Top" Width="75" Click="BtnShowMain_Click"/>
+        <Button x:Name="btnLoadMiddle" Content="Load Middle" HorizontalAlignment="Left" Margin="127,145,0,0" VerticalAlignment="Top" Width="75" Click="BtnLoadMiddle_Click"/>
+        <Button x:Name="btnLoadMiddleOut" Content="Load Out" HorizontalAlignment="Left" Margin="127,184,0,0" VerticalAlignment="Top" Width="75" Click="BtnLoadMiddleOut_Click"/>
+
 
     </Grid>
 </Window>

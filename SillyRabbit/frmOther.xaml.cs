@@ -27,5 +27,15 @@ namespace SillyRabbit {
             this.Close();
             //Application.Current.Shutdown();
         }
+
+        private void BtnLoadMiddle_Click(object sender, RoutedEventArgs e) {
+            frmMiddle frm = new frmMiddle(true);
+            frm.ShowDialog();
+        }
+
+        private void BtnLoadMiddleOut_Click(object sender, RoutedEventArgs e) {
+            frmMiddle frm = new frmMiddle(false);
+            frm.ShowDialog();
+        }
     }
 }

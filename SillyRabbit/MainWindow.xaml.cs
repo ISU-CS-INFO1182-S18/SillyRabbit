@@ -26,6 +26,7 @@ namespace SillyRabbit {
         public MainWindow() {
             InitializeComponent();
             //btnNewButton.Style = (Style)App.Current.Resources["styButton"];
+            ResizeMode = ResizeMode.NoResize;
         }
 
         private void BtnSerialize_Click(object sender, RoutedEventArgs e) {

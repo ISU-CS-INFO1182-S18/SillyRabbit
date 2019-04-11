@@ -1,0 +1,20 @@
+﻿<Window x:Class="SillyRabbit.frmMiddle"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SillyRabbit"
+        mc:Ignorable="d"
+        Title="frmMiddle" Height="234.139" Width="317.795" WindowStartupLocation="CenterOwner" WindowStyle="None">
+    <Grid>
+        <Viewbox Margin="10">
+            <StackPanel>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Please Appear in the Middle." VerticalAlignment="Top"/>
+                <TextBlock x:Name="tbClose">Close Me</TextBlock>
+                <TextBlock x:Name="tbShutdown">Be Gone Fool</TextBlock>
+                <Button x:Name="btnClose" Content="Close" Width="75" Click="BtnClose_Click"/>
+                <Button x:Name="btnShutDown" Content="Shutdown" Width="75" Click="BtnShutDown_Click"/>
+            </StackPanel>
+        </Viewbox>
+    </Grid>
+</Window>
