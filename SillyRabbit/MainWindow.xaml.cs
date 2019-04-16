@@ -27,6 +27,9 @@ namespace SillyRabbit {
             InitializeComponent();
             //btnNewButton.Style = (Style)App.Current.Resources["styButton"];
             ResizeMode = ResizeMode.NoResize;
+
+            imgCat.Source = new BitmapImage(new Uri(@"..\..\images\kittens.jpg",UriKind.Relative));
+
         }
 
         private void BtnSerialize_Click(object sender, RoutedEventArgs e) {

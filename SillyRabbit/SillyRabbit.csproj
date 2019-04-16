@@ -55,6 +55,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="frmGriddy.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="frmMiddle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -70,6 +74,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="frmGriddy.xaml.cs">
+      <DependentUpon>frmGriddy.xaml</DependentUpon>
     </Compile>
     <Compile Include="frmMiddle.xaml.cs">
       <DependentUpon>frmMiddle.xaml</DependentUpon>
@@ -113,6 +120,9 @@
       <Project>{a209fe12-12fe-4d55-8ffd-185b54db87bd}</Project>
       <Name>MyObjects</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\kit.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -37,5 +37,10 @@ namespace SillyRabbit {
             frmMiddle frm = new frmMiddle(false);
             frm.ShowDialog();
         }
+
+        private void BtnLoadGriddy_Click(object sender, RoutedEventArgs e) {
+            frmGriddy frm = new frmGriddy();
+            frm.Show();
+        }
     }
 }

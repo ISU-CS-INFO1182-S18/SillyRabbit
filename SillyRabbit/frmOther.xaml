@@ -11,6 +11,7 @@
         <Button x:Name="btnShowMain" Content="Button" HorizontalAlignment="Left" Margin="127,108,0,0" VerticalAlignment="Top" Width="75" Click="BtnShowMain_Click"/>
         <Button x:Name="btnLoadMiddle" Content="Load Middle" HorizontalAlignment="Left" Margin="127,145,0,0" VerticalAlignment="Top" Width="75" Click="BtnLoadMiddle_Click"/>
         <Button x:Name="btnLoadMiddleOut" Content="Load Out" HorizontalAlignment="Left" Margin="127,184,0,0" VerticalAlignment="Top" Width="75" Click="BtnLoadMiddleOut_Click"/>
+        <Button x:Name="btnLoadGriddy" Content="Load Grid" HorizontalAlignment="Left" Margin="229,184,0,0" VerticalAlignment="Top" Width="75" Click="BtnLoadGriddy_Click"/>
 
 
     </Grid>
